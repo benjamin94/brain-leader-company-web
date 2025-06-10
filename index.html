@@ -1,1245 +1,548 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <title>BLC - App Development Company based in Manchester</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="images/BLC-logo-sss.png" />
-    <!-- bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <!-- font awesome -->
-    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-    <!-- ionicons icon -->
-    <link href="css/ionicons.min.css" rel="stylesheet" type="text/css" />
-    <!-- mega menu -->
-    <link href="css/mega-menu/mega_menu.css" rel="stylesheet" type="text/css" />
-    <!-- owl-carousel -->
-    <link href="css/owl-carousel/owl.carousel.css" rel="stylesheet" type="text/css" />
-    <!-- magnific popup -->
-    <link href="css/magnific-popup.css" rel="stylesheet" type="text/css" />
-    <!-- animate -->
-    <link href="css/animate.css" rel="stylesheet" type="text/css" />
-    <!-- media element player -->
-    <link href="css/mediaelementplayer.min.css" rel="stylesheet" type="text/css" />
-    <!-- REVOLUTION STYLE SHEETS -->
-    <link href="revolution/css/settings.css" rel="stylesheet" type="text/css">
-    <!-- ADD-ONS CSS FILES -->
-    <link href="revolution/css/revolution.addon.particles.css" rel="stylesheet" type="text/css">
-    <!-- shortcodes -->
-    <link href="css/shortcodes.css" rel="stylesheet" type="text/css" />
-    <!-- main style -->
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
-    <!-- responsive -->
-    <link href="css/responsive.css" rel="stylesheet" type="text/css" />
-    <!-- custom -->
-    <link href="css/custom.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brain Leader - App & Web Development Company | Manchester</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+
+        .hover-scale:hover {
+            transform: scale(1.03);
+        }
+
+        .section-title {
+            position: relative;
+        }
+
+        .section-title:after {
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 3px;
+            background: #667eea;
+            bottom: -10px;
+            left: 0;
+        }
+    </style>
 </head>
 
-<body>
-    <!-- loading -->
-    <div id="loading">
-        <div id="loading-center">
-            <img src="images/loader.png" alt="loder">
-        </div>
-    </div>
-    <!-- loading End -->
-    <!-- HEADER  -->
-    <header class="white-transparent">
-        <!-- menu start -->
-        <nav id="menu-1" class="mega-menu">
-            <!-- menu list items container -->
-            <div class="menu-list-items">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <!-- menu logo -->
-                            <ul class="menu-logo">
-                                <li>
-                                    <a href="#iq-home">
-                                        <img id="logo_img" src="images/BLC-logo.png" alt="logo">
-                                    </a>
-                                </li>
-                            </ul>
-                            <ul class="menu-sidebar pull-right" data-toggle="modal" data-target=".iq-login-from"
-                                data-whatever="@mdo">
-                                <li class="iq-share">
-                                    <div class="slideouticons">
-                                        <input type="checkbox" id="togglebox">
-                                        <label for="togglebox" class="mainlabel"><i class="fa fa-share-alt"></i></label>
-                                        <div class="iconswrapper">
-                                            <ul>
-                                                <li><a href="https://www.facebook.com/brainleadercompany/"><i
-                                                            class="fa fa-facebook" title="Facebook"></i></a></li>
-                                                <li><a href="https://www.instagram.com/brainleadercompany/"><i
-                                                            class="fa fa-instagram" atitle="Instagram"
-                                                            ria-hidden="true"></i></a></li>
-                                                <li><a href="https://twitter.com/brainleaderco/"><i
-                                                            class="fa fa-twitter" title="Twitter"></i></a></li>
-                                                <li><a
-                                                        href="https://www.linkedin.com/company/brain-leader-company-ltd./"><i
-                                                            class="fa fa-linkedin" title="Linkedin"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                            <!-- menu links -->
-                            <ul class="menu-links">
-                                <li><a href="#iq-home">Home</a></li>
-                                <li><a href="#iq-about">About Us</a></li>
-                                <li><a href="#iq-portfolio">Portfolio</a></li>
-                                <li><a href="#iq-services">Services</a></li>
-                                <li><a href="#iq-team">Team</a></li>
-                                <li><a href="#iq-blog">Extra</a></li>
-                                <li><a href="#iq-contact">Contact Us</a></li>
-                            </ul>
-                        </div>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <h1 class="text-xl font-bold text-indigo-600">Brain Leader</h1>
                     </div>
                 </div>
-            </div>
-        </nav>
-    </header>
-    <!-- /HEADER END -->
-    <!--=================================
-         Banner -->
-    <div id="iq-home">
-        <div id="rev_slider_101_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="img-filter"
-            data-source="gallery"
-            style="margin:0px auto;background:transparent;padding:0px;margin-top:0px;margin-bottom:0px;">
-            <!-- START REVOLUTION SLIDER 5.4.7.4 fullwidth mode -->
-            <div id="rev_slider_101_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.4.7.4">
-                <ul>
-                    <!-- SLIDE  -->
-                    <li data-index="rs-419" data-transition="fadethroughdark" data-slotamount="default,default"
-                        data-hideafterloop="0" data-hideslideonmobile="off" data-randomtransition="on"
-                        data-easein="default,default" data-easeout="default,default" data-masterspeed="default,default"
-                        data-thumb="revolution/assets/100x50_1d214-b11.jpg" data-rotate="0,0" data-saveperformance="off"
-                        class="b1-video" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4=""
-                        data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10=""
-                        data-description="">
-                        <!-- MAIN IMAGE -->
-                        <img src="revolution/assets/slider-102.png" alt="" data-bgposition="center center"
-                            data-kenburns="on" data-duration="10000" data-ease="Linear.easeNone" data-scalestart="100"
-                            data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-blurstart="0"
-                            data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" class="rev-slidebg"
-                            data-no-retina>
-                        <!-- LAYERS -->
-                        <!-- LAYER NR. 3 -->
-                        <div class="tp-caption   tp-resizeme" id="slide-419-layer-43" data-x="center" data-hoffset="-50"
-                            data-y="bottom" data-voffset="150" data-width="['auto']" data-height="['auto']"
-                            data-type="text" data-responsive_offset="on"
-                            data-frames='[{"delay":4600,"speed":1500,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                            data-textAlign="['inherit','inherit','inherit','inherit']"
-                            style="z-index: 7; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400; color: #ffffff; letter-spacing: 0px;font-family:Open Sans;">
-                            <i class="fa-icon-linkedin"></i> </div>
-                        <!-- LAYER NR. 4 -->
-                        <div class="tp-caption   tp-resizeme" id="slide-419-layer-44" data-x="center" data-hoffset="26"
-                            data-y="bottom" data-voffset="150" data-width="['auto']" data-height="['auto']"
-                            data-type="text" data-responsive_offset="on"
-                            data-frames='[{"delay":4600,"speed":1500,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                            data-textAlign="['inherit','inherit','inherit','inherit']"
-                            style="z-index: 8; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400; color: #ffffff; letter-spacing: 0px;font-family:Open Sans;">
-                            <i class="fa-icon-facebook-f"></i> </div>
-                        <!-- LAYER NR. 5 -->
-                        <div class="tp-caption   tp-resizeme" id="slide-419-layer-45" data-x="center" data-hoffset="-10"
-                            data-y="bottom" data-voffset="150" data-width="['auto']" data-height="['auto']"
-                            data-type="text" data-responsive_offset="on"
-                            data-frames='[{"delay":4600,"speed":1500,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                            data-textAlign="['inherit','inherit','inherit','inherit']"
-                            style="z-index: 9; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400; color: #ffffff; letter-spacing: 0px;font-family:Open Sans;">
-                            <i class="fa-icon-instagram"></i> </div>
-                        <!-- LAYER NR. 6 -->
-                        <div class="tp-caption   tp-resizeme" id="slide-419-layer-46" data-x="center" data-hoffset="60"
-                            data-y="bottom" data-voffset="150" data-width="['auto']" data-height="['auto']"
-                            data-type="text" data-responsive_offset="on"
-                            data-frames='[{"delay":4600,"speed":1500,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                            data-textAlign="['inherit','inherit','inherit','inherit']"
-                            style="z-index: 10; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400; color: #ffffff; letter-spacing: 0px;font-family:Open Sans;">
-                            <i class="fa-icon-twitter"></i> </div>
-                        <!-- LAYER NR. 7 -->
-                        <div class="tp-caption   tp-resizeme" id="slide-419-layer-47" data-x="center" data-hoffset=""
-                            data-y="bottom" data-voffset="40" data-width="['auto']" data-height="['auto']"
-                            data-type="text" data-responsive_offset="on"
-                            data-frames='[{"delay":6100,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                            data-textAlign="['inherit','inherit','inherit','inherit']"
-                            style="z-index: 11; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400; color: #ffffff; letter-spacing: 0px;font-family:Open Sans;">
-                            <i class="fa-icon-angle-double-down"></i> </div>
-                        <!-- LAYER NR. 8 -->
-                        <!-- LAYER NR. 21 -->
-                        <a href="#iq-services" class="tp-caption rev-btn  tp-resizeme" id="slide-311-layer-3" data-x="center" data-hoffset="100" data-y="center" data-voffset="250"
-                            data-width="['auto']" data-height="['auto']" data-type="button" data-responsive_offset="on" data-frames='[{"delay":1500,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"0","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(0,0,0,1);bg:rgba(255,255,255,1);bs:solid;bw:0 0 0 0;br:0px 0px 0px 0px;"}]'
-                            data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[12,12,12,12]" data-paddingright="[35,35,35,35]"
-                            data-paddingbottom="[12,12,12,12]" data-paddingleft="[35,35,35,35]" style="z-index: 6; white-space: nowrap; font-size: 16px; line-height: 17px; font-weight: 700; color: #ffffff; font-family:PT Sans;background-color:rgb(40,56,141);border-color:rgb(255, 255, 255);border-radius:3px 3px 3px 3px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">Services
-                        </a>
-                        <!-- LAYER NR. 26 -->
-                        <a href="#iq-portfolio" class="tp-caption rev-btn  tp-resizeme" id="slide-311-layer-22" data-x="center" data-hoffset="-100" data-y="center" data-voffset="250"
-                            data-width="['auto']" data-height="['auto']" data-type="button" data-responsive_offset="on" data-frames='[{"delay":1500,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"0","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(0,0,0,1);bg:rgba(255,255,255,1);bs:solid;bw:0 0 0 0;br:0px 0px 0px 0px;"}]'
-                            data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[12,12,12,12]" data-paddingright="[35,35,35,35]"
-                            data-paddingbottom="[12,12,12,12]" data-paddingleft="[35,35,35,35]" style="z-index: 11; white-space: nowrap; font-size: 16px; line-height: 17px; font-weight: 700; color: #ffffff; font-family:PT Sans;background-color:rgb(40,56,141);border-color:rgb(255, 255, 255);border-radius:3px 3px 3px 3px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">Portfolio
-                        </a>
-
-
-                    </li>
-                    <!-- SLIDE  -->
-                    <li data-index="rs-7" data-transition="random-static,random-premium,random"
-                        data-slotamount="default,default,default,default" data-hideafterloop="0"
-                        data-hideslideonmobile="off" data-randomtransition="on"
-                        data-easein="default,default,default,default" data-easeout="default,default,default,default"
-                        data-masterspeed="default,default,default,default" data-thumb="" data-rotate="0,0,0,0"
-                        data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3=""
-                        data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9=""
-                        data-param10="" data-description="">
-                        <!-- MAIN IMAGE -->
-                        <img src="revolution/assets/transparent.png" data-bgcolor='#ffffff' style='background:#ffffff'
-                            alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"
-                            class="rev-slidebg" data-no-retina>
-                        <!-- LAYERS -->
-                        <!-- LAYER NR. 1 -->
-                        <div class="tp-caption   tp-resizeme" id="slide-7-layer-1" data-x="right" data-hoffset="30"
-                            data-y="center" data-voffset="-100" data-width="['auto']" data-height="['auto']"
-                            data-type="text" data-responsive_offset="on"
-                            data-frames='[{"delay":500,"split":"chars","splitdelay":0.1,"speed":1500,"split_direction":"forward","frame":"0","from":"y:top;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                            data-textAlign="['right','right','right','right']" data-paddingtop="[0,0,0,0]"
-                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-                            style="z-index: 5; white-space: nowrap; font-size: 152px; line-height: 160px; font-weight: 400; color: rgba(44,62,80,0.09); letter-spacing: 0px;font-family:Impact ;text-transform:uppercase;">
-                            Success </div>
-                        <!-- LAYER NR. 2 -->
-                        <div class="tp-caption   tp-resizeme" id="slide-7-layer-2" data-x="right" data-hoffset="30"
-                            data-y="center" data-voffset="-67" data-width="['auto']" data-height="['auto']"
-                            data-type="text" data-responsive_offset="on"
-                            data-frames='[{"delay":1940,"speed":1000,"frame":"0","from":"x:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeIn"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                            data-textAlign="['right','right','right','right']" data-paddingtop="[0,0,0,0]"
-                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-                            style="z-index: 6; white-space: nowrap; font-size: 60px; line-height: 60px; font-weight: 900; color: #222222; letter-spacing: 0px;font-family:Raleway;text-transform:uppercase;">
-                            iOS and Android
-                            <br>For the price of one </div>
-                        <!-- LAYER NR. 3 -->
-                        <div class="tp-caption   tp-resizeme" id="slide-7-layer-3" data-x="right" data-hoffset="30"
-                            data-y="center" data-voffset="77" data-width="['auto']" data-height="['auto']"
-                            data-type="text" data-responsive_offset="on"
-                            data-frames='[{"delay":2650,"speed":1000,"frame":"0","from":"x:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeIn"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                            data-textAlign="['right','right','right','right']" data-paddingtop="[0,0,0,0]"
-                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-                            style="z-index: 7; white-space: nowrap; font-size: 16px; line-height: 30px; font-weight: 400; color: #666666; letter-spacing: 0px;font-family:Open Sans;">
-                            We believe in working as efficiently as possible whilst keeping the highest standards 
-                            <br>of quality. For this reason we use ReactNative to create all our applications allowing us  
-                            <br>to provide you with iOS, Android and Web all in one project saving you time,
-                            <br>money and effort as well as having your text ever since the been the industry </div>
-                        <!-- LAYER NR. 4 -->
-                        <!-- LAYER NR. 26 -->
-                        <a href="#iq-portfolio" class="tp-caption rev-btn  tp-resizeme" id="slide-311-layer-22" data-x="right" data-hoffset="25" data-y="center" data-voffset="200"
-                            data-width="['auto']" data-height="['auto']" data-type="button" data-responsive_offset="on" data-frames='[{"delay":3000,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"0","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(0,0,0,1);bg:rgba(255,255,255,1);bs:solid;bw:0 0 0 0;br:0px 0px 0px 0px;"}]'
-                            data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[12,12,12,12]" data-paddingright="[35,35,35,35]"
-                            data-paddingbottom="[12,12,12,12]" data-paddingleft="[35,35,35,35]" style="z-index: 11; white-space: nowrap; font-size: 16px; line-height: 17px; font-weight: 700; color: #ffffff; font-family:PT Sans;background-color:rgb(40,56,141);border-color:rgb(255, 255, 255);border-radius:3px 3px 3px 3px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">
-                            Portfolio
-                        </a>
-
-                        <!-- LAYER NR. 6 -->
-                        <div class="tp-caption   tp-resizeme" id="slide-7-layer-8" data-x="-430" data-y="bottom"
-                            data-voffset="" data-width="['none','none','none','none']"
-                            data-height="['none','none','none','none']" data-type="image" data-responsive_offset="on"
-                            data-frames='[{"delay":500,"speed":1000,"frame":"0","from":"x:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeIn"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                            data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
-                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-                            style="z-index: 10;"><img src="revolution/assets/blue-line-1.png" alt="" data-ww="auto"
-                                data-hh="auto" data-no-retina> </div>
-                        <!-- LAYER NR. 7 -->
-                        <div class="tp-caption   tp-resizeme" id="slide-7-layer-7" data-x="" data-y="bottom"
-                            data-voffset="20" data-width="['none','none','none','none']"
-                            data-height="['none','none','none','none']" data-type="image" data-responsive_offset="on"
-                            data-frames='[{"delay":1220,"speed":1000,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeIn"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                            data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
-                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-                            style="z-index: 11;"><img src="revolution/assets/slider-111.png" alt="" data-ww="382px"
-                                data-hh="668px" data-no-retina> </div>
-                    </li>
-                    <!-- SLIDE  -->
-                    <li data-index="rs-8" data-transition="random-static,random-premium,random"
-                        data-slotamount="default,default,default,default" data-hideafterloop="0"
-                        data-hideslideonmobile="off" data-randomtransition="on"
-                        data-easein="default,default,default,default" data-easeout="default,default,default,default"
-                        data-masterspeed="default,default,default,default" data-thumb="" data-rotate="0,0,0,0"
-                        data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3=""
-                        data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9=""
-                        data-param10="" data-description="">
-                        <!-- MAIN IMAGE -->
-                        <img src="revolution/assets/transparent.png" data-bgcolor='#ffffff' style='background:#ffffff'
-                            alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"
-                            class="rev-slidebg" data-no-retina>
-                        <!-- LAYERS -->
-                        <!-- LAYER NR. 8 -->
-                        <div class="tp-caption   tp-resizeme" id="slide-8-layer-1" data-x="30" data-y="center"
-                            data-voffset="-100" data-width="['auto']" data-height="['auto']" data-type="text"
-                            data-responsive_offset="on"
-                            data-frames='[{"delay":500,"split":"chars","splitdelay":0.1,"speed":1500,"split_direction":"forward","frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                            data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]"
-                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-                            style="z-index: 5; white-space: nowrap; font-size: 152px; line-height: 160px; font-weight: 400; color: rgba(44,62,80,0.09); letter-spacing: 0px;font-family:Impact ;text-transform:uppercase;">
-                            Quality </div>
-                        <!-- LAYER NR. 9 -->
-                        <div class="tp-caption   tp-resizeme" id="slide-8-layer-2" data-x="30" data-y="center"
-                            data-voffset="-67" data-width="['auto']" data-height="['auto']" data-type="text"
-                            data-responsive_offset="on"
-                            data-frames='[{"delay":1940,"speed":1000,"frame":"0","from":"x:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeIn"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                            data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]"
-                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-                            style="z-index: 6; white-space: nowrap; font-size: 60px; line-height: 60px; font-weight: 900; color: #222222; letter-spacing: 0px;font-family:Raleway;text-transform:uppercase;">
-                            Optimised to your 
-                            <br> business needs </div>
-                        <!-- LAYER NR. 10 -->
-                        <div class="tp-caption   tp-resizeme" id="slide-8-layer-3" data-x="30" data-y="center"
-                            data-voffset="78" data-width="['auto']" data-height="['auto']" data-type="text"
-                            data-responsive_offset="on"
-                            data-frames='[{"delay":2650,"speed":1000,"frame":"0","from":"x:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeIn"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                            data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]"
-                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-                            style="z-index: 7; white-space: nowrap; font-size: 16px; line-height: 30px; font-weight: 400; color: #666666; letter-spacing: 0px;font-family:Open Sans;">
-                            We’re tired of seeing startups and businesses spending thousands on products only to 
-                            <br>find that they go bust a year later. At BLC, we work with you to first identify your business goals.
-                            <br> After this initial consultation we then formulate an initial vision which is optimised to the
-                            <br>current market as well as your business needs, maximising your chances of success and profit. </div>
-                        <!-- LAYER NR. 11 -->
-                        <!-- LAYER NR. 26 -->
-                        <a href="#iq-services" class="tp-caption rev-btn  tp-resizeme" id="slide-311-layer-22" data-x="left" data-hoffset="30" data-y="center" data-voffset="200"
-                            data-width="['auto']" data-height="['auto']" data-type="button" data-responsive_offset="on" data-frames='[{"delay":3000,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"0","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(0,0,0,1);bg:rgba(255,255,255,1);bs:solid;bw:0 0 0 0;br:0px 0px 0px 0px;"}]'
-                            data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[12,12,12,12]" data-paddingright="[35,35,35,35]"
-                            data-paddingbottom="[12,12,12,12]" data-paddingleft="[35,35,35,35]" style="z-index: 11; white-space: nowrap; font-size: 16px; line-height: 17px; font-weight: 700; color: #ffffff; font-family:PT Sans;background-color:rgb(40,56,141);border-color:rgb(255, 255, 255);border-radius:3px 3px 3px 3px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">
-                            Services
-                        </a>
-
-                        <!-- LAYER NR. 13 -->
-                        <div class="tp-caption   tp-resizeme" id="slide-8-layer-12" data-x="right" data-hoffset="-350"
-                            data-y="bottom" data-voffset="-20" data-width="['none','none','none','none']"
-                            data-height="['none','none','none','none']" data-type="image" data-responsive_offset="on"
-                            data-frames='[{"delay":500,"speed":1000,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeIn"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                            data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
-                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-                            style="z-index: 10;"><img src="revolution/assets/blue-line-2.png" alt="" data-ww="auto"
-                                data-hh="auto" data-no-retina> </div>
-                        <!-- LAYER NR. 14 -->
-                        <div class="tp-caption   tp-resizeme" id="slide-8-layer-10" data-x="right" data-hoffset=""
-                            data-y="bottom" data-voffset="" data-width="['none','none','none','none']"
-                            data-height="['none','none','none','none']" data-type="image" data-responsive_offset="on"
-                            data-frames='[{"delay":1220,"speed":1000,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeIn"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                            data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
-                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-                            style="z-index: 11;"><img src="revolution/assets/slider-121.png" alt="" data-ww="430px"
-                                data-hh="680px" data-no-retina> </div>
-                    </li>
-                </ul>
-                <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#"
+                            class="text-gray-900 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                        <a href="#services"
+                            class="text-gray-900 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Services</a>
+                        <a href="#vision"
+                            class="text-gray-900 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Vision</a>
+                        <a href="#process"
+                            class="text-gray-900 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Work
+                            Process</a>
+                        <a href="#portfolio"
+                            class="text-gray-900 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Portfolio</a>
+                        <a href="#team"
+                            class="text-gray-900 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Team</a>
+                        <a href="#activities"
+                            class="text-gray-900 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Activities</a>
+                    </div>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button
+                        class="mobile-menu-button p-2 rounded-md text-gray-700 hover:text-indigo-600 focus:outline-none">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
             </div>
         </div>
-    </div>
-    <!--=================================
-         Banner -->
-    <!--=================================
-         MAIN CONTENT -->
-    <div class="main-content">
-        <!--=================================
-            Special Feature 1 -->
-        <section id="iq-about" class="iq-special-1">
-            <div class="container-fluid">
-                <div class="row no-gutter row-eq-height">
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="iq-box bg-1 text-center">
-                            <div class="special-box iq-font-white iq-mtb-10">
-                                <i class="ion-ios-photos-outline iq-font-white"></i>
-                                <h4 class="iq-font-white iq-mt-30 iq-mb-10 iq-tw-6">Products That Deliver</h4>
-                                <div class="special-content">
-                                    <p>Brain Leader Company will define objectives with you and help you make sure that
-                                        your
-                                        objectives are being met. Finance, Number of Users, Reactions, we know them all.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="iq-box bg-2 text-center">
-                            <div class="special-box iq-font-white iq-mtb-10">
-                                <i class="ion-ios-speedometer-outline iq-font-white"></i>
-                                <h4 class="iq-font-white iq-mt-30 iq-mb-10 iq-tw-6">Agile Development</h4>
-                                <div class="special-content">
-                                    <p>We work in an agile environment to make sure that your products get delivered on
-                                        quality
-                                        and on time. Best of all, we use ReactNative to provide you iOS, Android and Web
-                                        all in one project should you wish to have them.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="iq-box bg-3 text-center">
-                            <div class="special-box iq-font-white iq-mtb-10">
-                                <i class="ion-ios-list-outline iq-font-white"></i>
-                                <h4 class="iq-font-white iq-mt-30 iq-mb-10 iq-tw-6">Established Processes</h4>
-                                <div class="special-content">
-                                    <p>We have established processes all the way from client onboarding to software
-                                        testing.
-                                        Our processes only have your ease of experience in mind whilst delivering the
-                                        highest quality product.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="iq-box bg-4 text-center">
-                            <div class="special-box iq-font-white iq-mtb-10">
-                                <i class="ion-ios-infinite-outline iq-font-white"></i>
-                                <h4 class="iq-font-white iq-mt-30 iq-mb-10 iq-tw-6">Clean Code</h4>
-                                <div class="special-content">
-                                    <p>There is nothing more satisfactory than well written and bug free code. We take
-                                        pride
-                                        in writting the cleanest and most organised code within our deadlines.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <!-- Mobile Menu -->
+        <div class="mobile-menu hidden md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white">
+                <a href="#"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-indigo-600">Home</a>
+                <a href="#services"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-indigo-600">Services</a>
+                <a href="#vision"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-indigo-600">Vision</a>
+                <a href="#process"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-indigo-600">Work
+                    Process</a>
+                <a href="#portfolio"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-indigo-600">Portfolio</a>
+                <a href="#team"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-indigo-600">Team</a>
+                <a href="#activities"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-indigo-600">Our
+                    Activities</a>
             </div>
-        </section>
-        <!--=================================
-            Special Feature 1 -->
-        <!--=================================
-            About Us -->
-        <section id="iq-more" class="white-bg iq-bg overview-block-ptb5 jarallax iq-creat-about"
-            style="background-image: url(''); background-position: left center;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-7 col-md-12 iq-re-9-mt120">
-                        <div class="boder-img bg-effect text-center">
-                            <img class="img-fluid center-block" src="images/about-8.png" alt="image">
-                        </div>
-                    </div>
-                    <div class="col-lg-5 col-md-12">
-                        <h3 class="small-title iq-tw-6">Our Vision</h3>
-                        <p>Our vision is to have three products that has over a Million Users, makes a ton of profits
-                            and is maintained
-                            by a small team of individuals including investors, clients and workers.</p>
-                        <p>We envision making sustainable and profitable digital products for our clients that benefits
-                            clients all over the world.</p>
-                        <p>We emphasise long lasting relationships with our clients which allow them to fulfil their
-                            potential
-                            by using digital solutions by increasing customer experience and profitability.</p>
-                        <a href="#iq-services" class="button iq-mt-20">Services</a>
-                    </div>
+        </div>
+    </nav>
 
+    <!-- Hero Section -->
+    <section class="gradient-bg pt-24 pb-16 md:pt-32 md:pb-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex items-center justify-between">
+                <div class="md:w-1/2 text-white">
+                    <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">App & Web Development Company based in
+                        Dubai</h1>
+                    <p class="text-xl mb-8">We build digital products that deliver results with clean code, agile
+                        development, and established processes.</p>
+                    <a href="#services"
+                        class="bg-white text-indigo-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300">Our
+                        Services</a>
+                </div>
+                <div class="md:w-1/2 mt-8 md:mt-0">
+                    <img src="https://brainleadercompany.com/images/about-8.png" alt="App Development"
+                        class="rounded-lg shadow-2xl w-full hover-scale">
                 </div>
             </div>
-        </section>
-        <!--=================================
-            About Us -->
-        <hr>
-        <!--=================================
-            Work Process -->
-        <section class="overview-block-ptb iq-hide">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 col-md-12">
-                        <div class="heading-title text-center">
-                            <h2 class="title iq-tw-6">Work Process</h2>
-                            <p>This is the work process that we go through with all of our venture partners and clients.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 iq-mt-20">
-                        <div class="white-bg iq-pall-20 wow fadeInUp" data-wow-duration="1s">
-                            <h1 class="iq-tw-6 iq-font-green">01.</h1>
-                            <h5 class="iq-tw-6 iq-mt-10">Objectives</h5>
-                            <p>We will make you set objectives that align with your vision and are technically
-                                achievable.
-                                Although we focus on the technology aspects, we've helped many startups x10 their
-                                revenue!
-                                And are ready to work with you to create the same and even more.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 iq-mt-20">
-                        <div class="grey-bg iq-pall-20 wow fadeInUp" data-wow-duration="1.3s">
-                            <h1 class="iq-tw-6 iq-font-green">02.</h1>
-                            <h5 class="iq-tw-6 iq-mt-10">Clickable Designs</h5>
-                            <p>Once the objectives are defined we turn the designs into live clickable prototypes where
-                                you
-                                can see your app alive and can click through from the first to the final screen.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 iq-mt-20">
-                        <div class="white-bg iq-pall-20 wow fadeInUp" data-wow-duration="1.7s">
-                            <h1 class="iq-tw-6 iq-font-green">03.</h1>
-                            <h5 class="iq-tw-6 iq-mt-10">Development</h5>
-                            <p>We use our systematic and solid approach to build and test the whole system from top to
-                                bottom.
-                                This is where our developers make the magic happen and turn all of the features into
-                                reality.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 iq-mt-20">
-                        <div class="grey-bg iq-pall-20 wow fadeInUp" data-wow-duration="2s">
-                            <h1 class="iq-tw-6 iq-font-green">04.</h1>
-                            <h5 class="iq-tw-6 iq-mt-10">Iterate</h5>
-                            <p>At this stage we have gone from objective setting, to deployment. The apps and website
-                                are
-                                live and you are wondering how to grow the business even more. Here is where we come in,
-                                set new objectives to 10x the business.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--=================================
-            Work Process -->
-        <!--=================================
-            Portfolio -->
-        <section id="iq-portfolio" class="overview-block-pt popup-gallery grey-bg">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 col-md-12">
-                        <div class="heading-title text-center">
-                            <h2 class="title iq-tw-6">Our Portfolio</h2>
-                            <p>Here is a snapshot of the work that we have been doing for the past year and a half. We
-                                are
-                                proud to share with you every single peace of work, starting from starting startups to
-                                seven
-                                figure businesses.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="iq-masonry-block">
-                    <div class="container-fluid iq-hide">
-                        <div class="row">
-                            <div class="col-lg-12 col-md-12 col-sm-12 text-center">
-                                <div class="isotope-filters isotope-tooltip">
-                                    <button data-filter="" class="active">All <span>8</span></button>
-                                    <button data-filter=".ecommerce">ECommerce<span>3</span></button>
-                                    <button data-filter=".data">Data<span>2</span></button>
-                                    <button data-filter=".bespoke">Bespoke<span>1</span></button>
-                                    <button data-filter=".courses">Courses<span>2</span></button>
-                                </div>
-                                <div class="iq-masonry iq-columns-4 full-grid">
+        </div>
+    </section>
 
-                                    <div class="iq-masonry-item ecommerce">
-                                        <div class="iq-portfolio-04">
-                                            <a class="iq-portfolio-img" href="#">
-                                                <img class="img-fluid" src="images/portfolio/elitecompetitions-logo.png"
-                                                    alt="#">
-                                            </a>
-                                            <div class="iq-overbg">
-                                                <div class="iq-portfolio-content">
-                                                    <h5 class="title iq-font-white"><a
-                                                            href="portfolio-elitecompetitions.html">
-                                                            Elite Competitions
-                                                        </a></h5>
-                                                    <hr>
-                                                    <ul class="iq-portfolio-icon">
-                                                        <li><a href="portfolio-elitecompetitions.html"><i
-                                                                    class="fa fa-link"></i></a></li>
-                                                        <li><a class="image-link popup-img"
-                                                                href="images/portfolio/elitecompetitions-logo.png"><i
-                                                                    class="fa fa-arrows-alt"></i></a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-gray-800 mb-12 section-title">Our Services</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-gray-50 p-6 rounded-xl hover-scale shadow-sm">
+                    <div class="text-indigo-600 mb-4">
+                        <i class="fas fa-chart-line text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Products That Deliver</h3>
+                    <p class="text-gray-600">We define objectives with you and ensure they're met - whether financial
+                        metrics, user numbers, or engagement. We track them all.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl hover-scale shadow-sm">
+                    <div class="text-indigo-600 mb-4">
+                        <i class="fas fa-tasks text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Agile Development</h3>
+                    <p class="text-gray-600">Working in agile sprints to deliver quality products on time. We use
+                        ReactNative for cross-platform iOS, Android, and Web solutions.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl hover-scale shadow-sm">
+                    <div class="text-indigo-600 mb-4">
+                        <i class="fas fa-sitemap text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Established Processes</h3>
+                    <p class="text-gray-600">From onboarding to testing, our streamlined processes ensure a smooth
+                        experience while delivering premium quality products.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl hover-scale shadow-sm">
+                    <div class="text-indigo-600 mb-4">
+                        <i class="fas fa-code text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Clean Code</h3>
+                    <p class="text-gray-600">We take pride in writing clean, organized, and bug-free code that stands
+                        the test of time, all while meeting deadlines.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                                    <div class="iq-masonry-item ecommerce">
-                                        <div class="iq-portfolio-04">
-                                            <a class="iq-portfolio-img" href="#">
-                                                <img class="img-fluid" src="images/portfolio/greedier-logo.png" alt="#">
-                                            </a>
-                                            <div class="iq-overbg">
-                                                <div class="iq-portfolio-content">
-                                                    <h5 class="title iq-font-white"><a href="portfolio-greedier.html">
-                                                            Greedier
-                                                        </a></h5>
-                                                    <hr>
-                                                    <ul class="iq-portfolio-icon">
-                                                        <li><a href="portfolio-greedier.html"><i
-                                                                    class="fa fa-link"></i></a></li>
-                                                        <li><a class="image-link popup-img"
-                                                                href="images/portfolio/greedier-logo.png"><i
-                                                                    class="fa fa-arrows-alt"></i></a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="iq-masonry-item bespoke">
-                                        <div class="iq-portfolio-04">
-                                            <a class="iq-portfolio-img" href="#">
-                                                <img class="img-fluid" src="images/portfolio/smileup-logo.png" alt="#">
-                                            </a>
-                                            <div class="iq-overbg">
-                                                <div class="iq-portfolio-content">
-                                                    <h5 class="title iq-font-white"><a href="portfolio-smileup.html">
-                                                            Smile Up
-                                                        </a></h5>
-                                                    <hr>
-                                                    <ul class="iq-portfolio-icon">
-                                                        <li><a href="portfolio-smileup.html"><i
-                                                                    class="fa fa-link"></i></a></li>
-                                                        <li><a class="image-link popup-img"
-                                                                href="images/portfolio/smileup-logo.png"><i
-                                                                    class="fa fa-arrows-alt"></i></a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="iq-masonry-item data">
-                                        <div class="iq-portfolio-04">
-                                            <a class="iq-portfolio-img" href="#">
-                                                <img class="img-fluid" src="images/portfolio/findmyhealing-logo.png"
-                                                    alt="#">
-                                            </a>
-                                            <div class="iq-overbg">
-                                                <div class="iq-portfolio-content">
-                                                    <h5 class="title iq-font-white"><a
-                                                            href="portfolio-findmyhealing.html">
-                                                            Find My Healing
-                                                        </a></h5>
-                                                    <hr>
-                                                    <ul class="iq-portfolio-icon">
-                                                        <li><a href="portfolio-findmyhealing.html"><i
-                                                                    class="fa fa-link"></i></a></li>
-                                                        <li><a class="image-link popup-img"
-                                                                href="images/portfolio/findmyhealing-logo.png"><i
-                                                                    class="fa fa-arrows-alt"></i></a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="iq-masonry-item ecommerce">
-                                        <div class="iq-portfolio-04">
-                                            <a class="iq-portfolio-img" href="#">
-                                                <img class="img-fluid" src="images/portfolio/afroqliq-logo.png" alt="#">
-                                            </a>
-                                            <div class="iq-overbg">
-                                                <div class="iq-portfolio-content">
-                                                    <h5 class="title iq-font-white"><a href="portfolio-afroqliq.html">
-                                                            Afroqliq
-                                                        </a></h5>
-                                                    <hr>
-                                                    <ul class="iq-portfolio-icon">
-                                                        <li><a href="portfolio-afroqliq.html"><i
-                                                                    class="fa fa-link"></i></a></li>
-                                                        <li><a class="image-link popup-img"
-                                                                href="images/portfolio/afroqliq-logo.png"><i
-                                                                    class="fa fa-arrows-alt"></i></a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="iq-masonry-item data">
-                                        <div class="iq-portfolio-04">
-                                            <a class="iq-portfolio-img" href="#">
-                                                <img class="img-fluid" src="images/portfolio/zklabs-logo.png" alt="#">
-                                            </a>
-                                            <div class="iq-overbg">
-                                                <div class="iq-portfolio-content">
-                                                    <h5 class="title iq-font-white"><a href="portfolio-zklabs.html">
-                                                            ZK Labs
-                                                        </a></h5>
-                                                    <hr>
-                                                    <ul class="iq-portfolio-icon">
-                                                        <li><a href="portfolio-zklabs.html"><i
-                                                                    class="fa fa-link"></i></a></li>
-                                                        <li><a class="image-link popup-img"
-                                                                href="images/portfolio/zklabs-logo.png"><i
-                                                                    class="fa fa-arrows-alt"></i></a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="iq-masonry-item courses">
-                                        <div class="iq-portfolio-04">
-                                            <a class="iq-portfolio-img" href="#">
-                                                <img class="img-fluid" src="images/portfolio/udemy-logo.jpg" alt="#">
-                                            </a>
-                                            <div class="iq-overbg">
-                                                <div class="iq-portfolio-content">
-                                                    <h5 class="title iq-font-white"><a
-                                                            href="https://www.udemy.com/android-fr/?couponCode=BLC-WEBSITE">
-                                                            Udemy Course
-                                                        </a></h5>
-                                                    <hr>
-                                                    <ul class="iq-portfolio-icon">
-                                                        <li><a
-                                                                href="https://www.udemy.com/android-fr/?couponCode=BLC-WEBSITE"><i
-                                                                    class="fa fa-link"></i></a></li>
-                                                        <li><a class="image-link popup-img"
-                                                                href="images/portfolio/udemy-logo.jpg"><i
-                                                                    class="fa fa-arrows-alt"></i></a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="iq-masonry-item courses">
-                                        <div class="iq-portfolio-04">
-                                            <a class="iq-portfolio-img" href="#">
-                                                <img class="img-fluid" src="images/portfolio/escp-logo.png" alt="#">
-                                            </a>
-                                            <div class="iq-overbg">
-                                                <div class="iq-portfolio-content">
-                                                    <h5 class="title iq-font-white"><a href="portfolio-escp.html">
-                                                            ESCP Lecturing
-                                                        </a></h5>
-                                                    <hr>
-                                                    <ul class="iq-portfolio-icon">
-                                                        <li><a href="portfolio-escp.html"><i class="fa fa-link"></i></a>
-                                                        </li>
-                                                        <li><a class="image-link popup-img"
-                                                                href="images/portfolio/escp-logo.png"><i
-                                                                    class="fa fa-arrows-alt"></i></a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+    <!-- Vision Section -->
+    <section id="vision" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+                        alt="Our Vision" class="rounded-lg shadow-lg w-full hover-scale">
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6 section-title">Our Vision</h2>
+                    <p class="text-gray-600 mb-4">We envision creating three products with over a million users,
+                        generating substantial profits, and maintained by a compact team of investors, clients, and
+                        workers.</p>
+                    <p class="text-gray-600 mb-6">Our focus is on developing sustainable and profitable digital products
+                        that benefit clients worldwide while fostering long-term relationships that help them achieve
+                        their full potential.</p>
+                    <div class="bg-indigo-100 border-l-4 border-indigo-600 p-4">
+                        <p class="text-gray-800 italic">"We emphasise long lasting relationships with our clients which
+                            allow them to fulfil their potential by using digital solutions to enhance customer
+                            experience and profitability."</p>
                     </div>
                 </div>
             </div>
-        </section>
-    </div>
-    <!--=================================
-            Main Content -->
-    <!--=================================
-            Our Great Features -->
-    <section id="iq-services" class="overview-block-ptb iq-hide">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12">
-                    <div class="heading-title text-center">
-                        <h2 class="title iq-tw-6">Our Services</h2>
-                        <p>We are proud to be experts in the following domains.</p>
+        </div>
+    </section>
+
+    <!-- Work Process Section -->
+    <section id="process" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-gray-800 mb-12 text-center section-title mx-auto"
+                style="width: fit-content;">Work Process</h2>
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Step 1 -->
+                <div class="text-center">
+                    <div class="bg-indigo-100 w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <span class="text-2xl font-bold text-indigo-600">1</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Discovery</h3>
+                    <p class="text-gray-600">Understanding your business goals and project requirements.</p>
+                </div>
+                <!-- Step 2 -->
+                <div class="text-center">
+                    <div class="bg-indigo-100 w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <span class="text-2xl font-bold text-indigo-600">2</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Planning</h3>
+                    <p class="text-gray-600">Creating a roadmap with milestones and deliverables.</p>
+                </div>
+                <!-- Step 3 -->
+                <div class="text-center">
+                    <div class="bg-indigo-100 w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <span class="text-2xl font-bold text-indigo-600">3</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Development</h3>
+                    <p class="text-gray-600">Building your product with clean code and agile practices.</p>
+                </div>
+                <!-- Step 4 -->
+                <div class="text-center">
+                    <div class="bg-indigo-100 w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <span class="text-2xl font-bold text-indigo-600">4</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Launch & Growth</h3>
+                    <p class="text-gray-600">Deploying and optimizing your product for success.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-16 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-gray-800 mb-12 text-center section-title mx-auto"
+                style="width: fit-content;">Our Portfolio</h2>
+            <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12">Check out some of our recent projects and
+                success stories.</p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Portfolio Item 1 -->
+                <div
+                    class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 max-w-xs mx-auto">
+                    <img src="images/portfolio/elitecompetitions-logo.png" alt="Project 1"
+                        class="w-full aspect-square object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2">Elite Competitions</h3>
+                        <p class="text-gray-600 mb-3 text-sm">Competition management platform</p>
+                        <span class="text-xs text-indigo-600">React / React Native / Node.js</span>
+                    </div>
+                </div>
+                <!-- Portfolio Item 2 -->
+                <div
+                    class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 max-w-xs mx-auto">
+                    <img src="images/portfolio/greedier-logo.png" alt="Project 2"
+                        class="w-full aspect-square object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2">Greedier</h3>
+                        <p class="text-gray-600 mb-3 text-sm">Social marketplace application</p>
+                        <span class="text-xs text-indigo-600">React Native / Wordpress</span>
+                    </div>
+                </div>
+                <!-- Portfolio Item 3 -->
+                <div
+                    class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 max-w-xs mx-auto">
+                    <img src="images/portfolio/smileup-logo.png" alt="Project 3"
+                        class="w-full aspect-square object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2">Smile Up</h3>
+                        <p class="text-gray-600 mb-3 text-sm">Dental care management system</p>
+                        <span class="text-xs text-indigo-600">Android</span>
+                    </div>
+                </div>
+                <!-- Portfolio Item 4 -->
+                <div
+                    class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 max-w-xs mx-auto">
+                    <img src="images/portfolio/findmyhealing-logo.png" alt="Project 4"
+                        class="w-full aspect-square object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2">Find My Healing</h3>
+                        <p class="text-gray-600 mb-3 text-sm">Healthcare provider directory</p>
+                        <span class="text-xs text-indigo-600">React</span>
+                    </div>
+                </div>
+                <!-- Portfolio Item 5 -->
+                <div
+                    class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 max-w-xs mx-auto">
+                    <img src="images/portfolio/afroqliq-logo.png" alt="Project 5"
+                        class="w-full aspect-square object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2">Afroqliq</h3>
+                        <p class="text-gray-600 mb-3 text-sm">Food and Groceries Delivery App</p>
+                        <span class="text-xs text-indigo-600">React Native</span>
+                    </div>
+                </div>
+                <!-- Portfolio Item 6 -->
+                <div
+                    class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 max-w-xs mx-auto">
+                    <img src="images/portfolio/zklabs-logo.png" alt="Project 6"
+                        class="w-full aspect-square object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2">ZK Labs</h3>
+                        <p class="text-gray-600 mb-3 text-sm">Blockchain development platform</p>
+                        <span class="text-xs text-indigo-600">Hugo</span>
+                    </div>
+                </div>
+                <!-- Portfolio Item 7 -->
+                <div
+                    class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 max-w-xs mx-auto">
+                    <img src="images/portfolio/udemy-logo.jpg" alt="Project 7"
+                        class="w-full aspect-square object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2">Udemy</h3>
+                        <p class="text-gray-600 mb-3 text-sm">Online learning platform</p>
+                        <span class="text-xs text-indigo-600">Android</span>
+                    </div>
+                </div>
+                <!-- Portfolio Item 8 -->
+                <div
+                    class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 max-w-xs mx-auto">
+                    <img src="images/portfolio/escp-logo.png" alt="Project 8" class="w-full aspect-square object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2">ESCP Business School</h3>
+                        <p class="text-gray-600 mb-3 text-sm">Educational management system</p>
+                        <span class="text-xs text-indigo-600">Python</span>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-6 iq-mt-40">
-                    <div class="iq-feature9 text-center iq-plr-10 wow fadeInUp" data-wow-duration="1.0s">
-                        <div class="iq-feature9-blog">
-                            <div class="left">
-                                <i class="ion-ios-photos-outline iq-font-white"></i>
-                            </div>
-                            <h5 class="iq-font-black iq-tw-6 iq-mt-15">Business Goals</h5>
-                            <p class="iq-mb-0">We will help you set your business goals and timelines that are realistic
-                                with a strong emphasis on technology.</p>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-gray-800 mb-12 text-center section-title mx-auto"
+                style="width: fit-content;">Our Team</h2>
+            <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12">Meet our talented team of professionals who
+                make the magic happen.</p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Team Member 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover-scale">
+                    <img src="images/team/ben-p.png" alt="Ben" class="w-full aspect-[9/16] object-cover h-80">
+                    <div class="p-3">
+                        <h3 class="text-lg font-semibold mb-1">Ben</h3>
+                        <p class="text-indigo-600 mb-2">CEO & Founder</p>
+                        <p class="text-gray-600 mb-2 text-sm">10+ years of experience in software development and team
+                            leadership.</p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-gray-400 hover:text-indigo-600"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="text-gray-400 hover:text-indigo-600"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="text-gray-400 hover:text-indigo-600"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 iq-mt-40">
-                    <div class="iq-feature9 text-center iq-plr-10 wow fadeInUp" data-wow-duration="1.5s">
-                        <div class="iq-feature9-blog">
-                            <div class="left">
-                                <i class="ion-ios-speedometer-outline iq-font-white"></i>
-                            </div>
-                            <h5 class="iq-font-black iq-tw-6 iq-mt-15">Clickable Prototypes</h5>
-                            <p class="iq-mb-0">Feel like your product is already alive by clicking through from
-                                beginning
-                                to end. Order it to show your boss, investors or yourself the amazing idea that you
-                                have.
-                            </p>
+                <!-- Team Member 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover-scale">
+                    <img src="images/team/dileep-p.png" alt="Dileep" class="w-full aspect-[9/16] object-cover h-80">
+                    <div class="p-3">
+                        <h3 class="text-lg font-semibold mb-1">Dileep</h3>
+                        <p class="text-indigo-600 mb-2">Lead Developer</p>
+                        <p class="text-gray-600 mb-2 text-sm">Full-stack developer with expertise in React and Node.js.
+                        </p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-gray-400 hover:text-indigo-600"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="text-gray-400 hover:text-indigo-600"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="text-gray-400 hover:text-indigo-600"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 iq-mt-40">
-                    <div class="iq-feature9 text-center iq-plr-10 wow fadeInUp" data-wow-duration="2.0s">
-                        <div class="iq-feature9-blog">
-                            <div class="left">
-                                <i class="ion-ios-list-outline iq-font-white"></i>
-                            </div>
-                            <h5 class="iq-font-black iq-tw-6 iq-mt-15">Website Development</h5>
-                            <p class="iq-mb-0">We create beautiful, stunning responsive website from Commerce stores to
-                                simple
-                                information based websites all of which will improve your customers experience and
-                                satisfaction.</p>
+                <!-- Team Member 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover-scale">
+                    <img src="images/team/rishan-p.png" alt="Rishan" class="w-full aspect-[9/16] object-cover h-80">
+                    <div class="p-3">
+                        <h3 class="text-lg font-semibold mb-1">Rishan</h3>
+                        <p class="text-indigo-600 mb-2">UX Designer</p>
+                        <p class="text-gray-600 mb-2 text-sm">Creative designer focused on building intuitive user
+                            experiences.</p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-gray-400 hover:text-indigo-600"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="text-gray-400 hover:text-indigo-600"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="text-gray-400 hover:text-indigo-600"><i class="fab fa-dribbble"></i></a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 iq-mt-40">
-                    <div class="iq-feature9 text-center iq-plr-10 wow fadeInUp" data-wow-duration="1.0s">
-                        <div class="iq-feature9-blog">
-                            <div class="left">
-                                <i class="ion-load-a iq-font-white"></i>
-                            </div>
-                            <h5 class="iq-font-black iq-tw-6 iq-mt-15">Mobile App Development</h5>
-                            <p class="iq-mb-0">We love creating mobile applications for our clients. From AR based
-                                applications
-                                to two sided market places, our apps will add an extra wow factor to your business
-                                taking it to the next level.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 iq-mt-40">
-                    <div class="iq-feature9 text-center iq-plr-10 wow fadeInUp" data-wow-duration="1.5s">
-                        <div class="iq-feature9-blog">
-                            <div class="left">
-                                <i class="ion-social-javascript-outline iq-font-white"></i>
-                            </div>
-                            <h5 class="iq-font-black iq-tw-6 iq-mt-15">Admin Dashboard Development</h5>
-                            <p class="iq-mb-0">We want to ensure you're comfortable dealing with the digital side of
-                                your new application and website.
-                                Our admin dashboards make things as painless and enjoyable as possible!
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 iq-mt-40">
-                    <div class="iq-feature9 text-center iq-plr-10 wow fadeInUp" data-wow-duration="2.0s">
-                        <div class="iq-feature9-blog">
-                            <div class="left">
-                                <i class="ion-ios-paperplane-outline iq-font-white"></i>
-                            </div>
-                            <h5 class="iq-font-black iq-tw-6 iq-mt-15">Training</h5>
-                            <p class="iq-mb-0">We have an online course with 1500+ students and 4.2 star rating.
-                                We have thought for ESCP London at Masters level.
-                                We will train you on new technologies.</p>
+                <!-- Team Member 4 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover-scale">
+                    <img src="images/team/damian-p.png" alt="Damian" class="w-full aspect-[9/16] object-cover h-80">
+                    <div class="p-3">
+                        <h3 class="text-lg font-semibold mb-1">Damian</h3>
+                        <p class="text-indigo-600 mb-2">Mentor</p>
+                        <p class="text-gray-600 mb-2 text-sm">Experienced mentor guiding teams in agile practices and
+                            professional development.</p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-gray-400 hover:text-indigo-600"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="text-gray-400 hover:text-indigo-600"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="text-gray-400 hover:text-indigo-600"><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!--=================================
-            Our Great Features -->
-    <!-- Team 7 -->
-    <div id="iq-team" class="iq-team1 overview-block-pt">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12">
-                    <div class="heading-title text-center">
-                        <h2 class="title iq-tw-6">Our Team</h2>
-                        <p>Every BLC team member works hard as a team and individually to make sure that the products we
-                            deliver
-                            to you are exceptional whilst maintaining long lasting beneficial relationships.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3 col-sm-6 iq-mt-50">
-                    <div class="iq-team">
-                        <div class="iq-team-images"> <img class="img-fluid center-block" src="images/team/ben-p.png"
-                                alt="image"> <span class="tooltip-item"></span> </div>
-                        <div class="iq-team-content">
-                            <h5 class="iq-tw-6"><a>Benjamin</a></h5>
-                            <span>CEO</span>
-                            <p>Ben lives and breaths the work hard play hard ethos. He is passionate about product
-                                development
-                                and achieving great results.</p>
+
+    <!-- Activities Section -->
+    <section id="activities" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-gray-800 mb-12 text-center section-title mx-auto"
+                style="width: fit-content;">In Our Spare Time</h2>
+            <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12">We like to have fun in our spare time and
+                continuously expand our knowledge through various activities.</p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Activity 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover-scale">
+                    <img src="https://brainleadercompany.com/images/udemy.png" alt="Udemy Course"
+                        class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="text-xs text-indigo-600 mb-1">Mar 2017</div>
+                        <h3 class="text-xl font-semibold mb-2">Udemy Course</h3>
+                        <p class="text-gray-600 mb-4">The online course with 1500+ paying students and 4.2 star rating
+                            guides through writing three mobile apps.</p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <span class="mr-4"><i class="fas fa-heart mr-1"></i> 10 likes</span>
+                            <span><i class="fas fa-comment mr-1"></i> 6 comments</span>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6 iq-mt-50">
-                    <div class="iq-team">
-                        <div class="iq-team-images"> <img class="img-fluid center-block" src="images/team/dileep-p.png"
-                                alt="image"> <span class="tooltip-item"></span> </div>
-                        <div class="iq-team-content">
-                            <h5 class="iq-tw-6"><a>Dileep</a></h5>
-                            <span>CTO</span>
-                            <p>Dileep is the most committed and multi-disciplinary individual that you will ever meet.
-                                He
-                                leads and creates full products from absolute scratch.</p>
+                <!-- Activity 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover-scale">
+                    <img src="images/GUH-2-2018.png" alt="Udemy Course" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="text-xs text-indigo-600 mb-1">Mar 2017</div>
+                        <h3 class="text-xl font-semibold mb-2">Great Uni Hack Mentor</h3>
+                        <p class="text-gray-600 mb-4">The online course with 1500+ paying students and 4.2 star rating
+                            guides through writing three mobile apps.</p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <span class="mr-4"><i class="fas fa-heart mr-1"></i> 10 likes</span>
+                            <span><i class="fas fa-comment mr-1"></i> 6 comments</span>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6 iq-mt-50">
-                    <div class="iq-team">
-                        <div class="iq-team-images"> <img class="img-fluid center-block" src="images/team/rishan-p.png"
-                                alt="image"> <span class="tooltip-item"></span> </div>
-                        <div class="iq-team-content">
-                            <h5 class="iq-tw-6"><a>Rishan</a></h5>
-                            <span>Sales</span>
-                            <p>Rishan is charismatic, personable and smart. He will reach out to you so that you can
-                                work
-                                with us if he thinks that you are a good fit.</p>
+                <!-- Activity 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover-scale">
+                    <img src="https://brainleadercompany.com/images/escp1.jpg" alt="ESCP Lecturing"
+                        class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="text-xs text-indigo-600 mb-1">May 2018</div>
+                        <h3 class="text-xl font-semibold mb-2">ESCP Masters Lecturing</h3>
+                        <p class="text-gray-600 mb-4">We ran the "IoT for Marketers" module for the Masters course,
+                            rated by students as the best module of their year.</p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <span class="mr-4"><i class="fas fa-heart mr-1"></i> 4 likes</span>
+                            <span><i class="fas fa-comment mr-1"></i> 9 comments</span>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6 iq-mt-50">
-                    <div class="iq-team">
-                        <div class="iq-team-images"> <img class="img-fluid center-block" src="images/team/damian-p.png"
-                                alt="image"> <span class="tooltip-item"></span> </div>
-                        <div class="iq-team-content">
-                            <h5 class="iq-tw-6"><a>Damian</a></h5>
-                            <span>Mentor</span>
-                            <p>Damian is a busy person that will shine some light when we need him the most. He likes to
-                                tell past stores and lets us find our own answers to our own questions.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Team 7 -->
-    <!--=================================
-        <!--=================================
-            Blog -->
-    <section id="iq-blog" class="iq-blog overview-block-ptb grey-bg">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12">
-                    <div class="heading-title text-center">
-                        <h2 class="title iq-tw-6">In Our Spare Time</h2>
-                        <p>We like to have fun in our spare time - we invite you to have a look at some of the things
-                            that
-                            we do outside of our working hours.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12 col-md-12">
-                    <div class="owl-carousel" data-nav-dots="true" data-nav-arrow="false" data-items="3"
-                        data-xs-items="1" data-sm-items="2" data-md-items="2" data-lg-items="3" data-autoplay="true">
-                        <div class="item">
-                            <div class="iq-blog-entry white-bg">
-                                <div class="iq-entry-image clearfix">
-                                    <img class="img-fluid" src="images/udemy.png" alt="#">
-                                    <span class="tag"><i class="ion-image"></i>Photos</span>
-                                    <span class="date"><small>Mar</small><small>2017</small></span>
-                                </div>
-                                <div class="iq-blog-detail">
-                                    <div class="iq-entry-title iq-mb-10">
-                                        <a href="#">
-                                            <h5 class="iq-tw-6">Udemy Course</h5>
-                                        </a>
-                                    </div>
-                                    <div class="iq-entry-content">
-                                        <p>The online course with 1500+ paying students and 4.2 star rating will guide
-                                            you
-                                            through writing three mobile apps.</p>
-                                    </div>
-                                    <ul class="iq-entry-meta iq-mt-10">
-                                        <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i> BLC</a></li>
-                                        <li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i> 10 like</a></li>
-                                        <li><a href="#"><i class="fa fa-comments" aria-hidden="true"></i> 6 comments</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="iq-blog-entry white-bg">
-                                <div class="iq-entry-image clearfix">
-                                    <img class="img-fluid" src="images/escp1.jpg" alt="#">
-                                    <span class="tag"><i class="ion-image"></i>Photos</span>
-                                    <span class="date"><small>May</small><small>2018</small></span>
-                                </div>
-                                <div class="iq-blog-detail">
-                                    <div class="iq-entry-title iq-mb-10">
-                                        <a href="#">
-                                            <h5 class="iq-tw-6">ESCP Masters Lecturing</h5>
-                                        </a>
-                                    </div>
-                                    <div class="iq-entry-content">
-                                        <p>We ran the module "IoT for Marketers" for the Masters of Management and
-                                            Entrepreneurship
-                                            course. Students feedbacked that this is the best module that they had in
-                                            the
-                                            whole year.</p>
-                                    </div>
-                                    <ul class="iq-entry-meta iq-mt-10">
-                                        <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i> BLC</a></li>
-                                        <li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i> 4 like</a></li>
-                                        <li><a href="#"><i class="fa fa-comments" aria-hidden="true"></i> 9 comments</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="iq-blog-entry white-bg">
-                                <div class="iq-entry-image clearfix">
-                                    <img class="img-fluid" src="images/GUH-2-2018.png" alt="#">
-                                    <span class="tag"><i class="ion-image"></i>Photos</span>
-                                    <span class="date"><small>Nov</small><small>2018</small></span>
-                                </div>
-                                <div class="iq-blog-detail">
-                                    <div class="iq-entry-title iq-mb-10">
-                                        <a href="#">
-                                            <h5 class="iq-tw-6">Great Uni Hack Mentor</h5>
-                                        </a>
-                                    </div>
-                                    <div class="iq-entry-content">
-                                        <p>We mentored at Great Uni Hack 2018 and Judged the Machine Learning and AI
-                                            Category.
-                                            Great energy, amazing organization and well done to the 20+ volunteers and
-                                            100+ attendees!
-                                        </p>
-                                    </div>
-                                    <ul class="iq-entry-meta iq-mt-10">
-                                        <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i> BLC</a></li>
-                                        <li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i> 6 like</a></li>
-                                        <li><a href="#"><i class="fa fa-comments" aria-hidden="true"></i> 9 comments</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="iq-blog-entry white-bg">
-                                <div class="iq-entry-image clearfix">
-                                    <img class="img-fluid" src="images/android-manchester.jpg" alt="#">
-                                    <span class="tag"><i class="ion-image"></i>Photos</span>
-                                    <span class="date"><small>May</small><small>2018</small></span>
-                                </div>
-                                <div class="iq-blog-detail">
-                                    <div class="iq-entry-title iq-mb-10">
-                                        <a href="#">
-                                            <h5 class="iq-tw-6">Android Manchester</h5>
-                                        </a>
-                                    </div>
-                                    <div class="iq-entry-content">
-                                        <p>We are organizers of Android Manchester since 2016 and also attend the iOS,
-                                            Javascript,
-                                            Machine Learning and Python meetups.</p>
-                                    </div>
-                                    <ul class="iq-entry-meta iq-mt-10">
-                                        <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i> BLC</a></li>
-                                        <li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i> 9 like</a></li>
-                                        <li><a href="#"><i class="fa fa-comments" aria-hidden="true"></i> 7 comments</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="iq-blog-entry white-bg">
-                                <div class="iq-entry-image clearfix">
-                                    <img class="img-fluid" src="images/batur.jpg" alt="#">
-                                    <span class="tag"><i class="ion-image"></i>Photos</span>
-                                    <span class="date"><small>Feb</small><small>2018</small></span>
-                                </div>
-                                <div class="iq-blog-detail">
-                                    <div class="iq-entry-title iq-mb-10">
-                                        <a href="#">
-                                            <h5 class="iq-tw-6">Traveling</h5>
-                                        </a>
-                                    </div>
-                                    <div class="iq-entry-content">
-                                        <p>We enjoy two one month working trips per year where the team can spend time
-                                            together.
-                                            During those trips we take two Fridays off to have great adventures!.</p>
-                                    </div>
-                                    <ul class="iq-entry-meta iq-mt-10">
-                                        <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i> BLC</a></li>
-                                        <li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i> 6 like</a></li>
-                                        <li><a href="#"><i class="fa fa-comments" aria-hidden="true"></i> 9 comments</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
+                <!-- Activity 4 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover-scale">
+                    <img src="https://brainleadercompany.com/images/batur.jpg" alt="Traveling"
+                        class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="text-xs text-indigo-600 mb-1">Feb 2018</div>
+                        <h3 class="text-xl font-semibold mb-2">Traveling</h3>
+                        <p class="text-gray-600 mb-4">We enjoy two one-month working trips per year where the team can
+                            spend time together and take Fridays off for adventures.</p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <span class="mr-4"><i class="fas fa-heart mr-1"></i> 6 likes</span>
+                            <span><i class="fas fa-comment mr-1"></i> 9 comments</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!--=================================
-            Blog -->
-    <hr>
-    </div>
-    <!--=================================
-         Main Content -->
-    <!--=================================
-         Footer -->
-    <footer id="iq-contact" class="iq-footer12 white-bg overview-block-pt">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-4 col-sm-6 iq-pl-60 iq-mtb-20">
-                    <div class="logo">
-                        <img id="footer_logo_dark" class="img-fluid" src="images/BLC-logo.png" alt="#">
-                        <div class="iq-font-black iq-mt-15">Brain Leader Company is always available to super power your
-                            business and maintain a fruitful relationship. Contact us and let's get started. </div>
-                    </div>
-                    <ul class="iq-contact w-100 d-inline-block iq-mt-30">
-                        <li>
-                            <i class="ion-ios-location-outline"></i>
-                            <div class="content-blog line-height"> <a href="#">Ziferblat, 23 Edge Street,
-                                    Manchester.</a></div>
-                        </li>
-                        <li>
-                            <i class="ion-ios-telephone-outline"></i>
-                            <div class="content-blog"> <a href="#">+44 7864610467</a></div>
-                        </li>
-                        <li>
-                            <i class="ion-ios-email-outline"></i>
-                            <div class="content-blog"> <a href="#">ben@brainleadercompany.com</a></div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-lg-2 col-sm-6 about-us iq-mtb-20">
-                    <h5 class="small-title iq-tw-6 iq-font-black iq-mb-30">About Us</h5>
-                    <ul>
-                        <li><a href="index.html#iq-portfolio">Portfolio</a></li>
-                        <li><a href="index.html#iq-services">Services</a></li>
-                        <li><a href="index.html#iq-team">Team</a></li>
-                        <li><a href="index.html#iq-blog">Extra </a></li>
-                        <li><a href="index.html#iq-contact">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-2 col-sm-6 iq-newsletter iq-mtb-20">
-                    <h5 class="small-title iq-tw-6 iq-font-black iq-mb-30">Social Media</h5>
-                    <div class="iconswrapper">
-                        <ul>
-                            <li><a href="https://www.facebook.com/brainleadercompany/"><i class="fa fa-facebook"
-                                        title="Facebook"></i></a></li>
-                            <li><a href="https://www.instagram.com/brainleadercompany/"><i class="fa fa-instagram"
-                                        atitle="Instagram" ria-hidden="true"></i></a></li>
-                            <li><a href="https://twitter.com/brainleaderco/"><i class="fa fa-twitter"
-                                        title="Twitter"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 iq-mtb-20">
-                    <div class="iq-map">
-                        <iframe
-                            src="https://maps.google.com/maps?q=ziferblat%2023%20edge%20street&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                            style="border:0" allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div>
+
+    <!-- Call to Action -->
+    <section class="gradient-bg py-16 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Build Your Next App?</h2>
+            <p class="text-xl max-w-2xl mx-auto mb-8">Let's discuss how we can help you create a high-quality digital
+                product that meets your business objectives.</p>
+            <a href="#"
+                class="bg-white text-indigo-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300 inline-block">Get
+                in Touch</a>
         </div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-12">
-                    <hr>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Brain Leader</h3>
+                    <p class="text-gray-400">App development company based in Manchester delivering high-quality digital
+                        products with clean code and agile methodologies.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition">Services</a></li>
+                        <li><a href="#process" class="text-gray-400 hover:text-white transition">Work Process</a></li>
+                        <li><a href="#activities" class="text-gray-400 hover:text-white transition">Activities</a>
+                        </li>
+                        <li><a href="#vision" class="text-gray-400 hover:text-white transition">Our Vision</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Connect With Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white text-xl"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-xl"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-xl"><i class="fab fa-github"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-xl"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <p class="text-gray-400 mt-4">hello@brainleadercompany.com</p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-sm-12 text-center">
-                    <div class="iq-copyright iq-mtb-20 iq-font-dark">
-                        Copyright
-                        <span id="copyright">
-                            <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
-                        </span>
-                        <a class="iq-font-green" href="#">Brain Leader Company</a> All Rights Reserved
-                    </div>
-                </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy;
+                    <script>document.write(new Date().getFullYear())</script> Brain Leader Company. All rights reserved.
+                </p>
             </div>
         </div>
     </footer>
-    <!--=================================
-         Footer -->
-    <!--=================================
 
-    <!-- back-to-top -->
-    <div id="back-to-top">
-        <a class="top" id="top" href="#top"> <i class="ion-ios-upload-outline"></i> </a>
-    </div>
-    <!-- back-to-top End -->
-    <!--================ Jquery =================-->
-    <!-- Jquery  -->
-    <script src="js/jquery.min.js"></script>
-    <!-- bootstrap -->
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <!-- Google captcha code Js -->
-    <script src='https://www.google.com/recaptcha/api.js'></script>
-    <!-- Mega Menu -->
-    <script src="js/mega-menu/mega_menu.js"></script>
-    <!-- Main -->
-    <script src="js/main.js"></script>
-    <!-- ADD-ONS JS FILES -->
-    <script src="revolution/js/revolution.addon.particles.min.js"></script>
-    <!-- REVOLUTION JS FILES -->
-    <script src="revolution/js/jquery.themepunch.tools.min.js"></script>
-    <script src="revolution/js/jquery.themepunch.revolution.min.js"></script>
-    <!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
-    <script src="revolution/js/extensions/revolution.extension.actions.min.js"></script>
-    <script src="revolution/js/extensions/revolution.extension.carousel.min.js"></script>
-    <script src="revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
-    <script src="revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-    <script src="revolution/js/extensions/revolution.extension.migration.min.js"></script>
-    <script src="revolution/js/extensions/revolution.extension.navigation.min.js"></script>
-    <script src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>
-    <script src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-    <script src="revolution/js/extensions/revolution.extension.video.min.js"></script>
-    <!-- Custom -->
-    <script src="js/custom.js"></script>
-    <!-- END REVOLUTION SLIDER -->
     <script>
-        var revapi101,
-            tpj;
-        (function () {
-            if (!/loaded|interactive|complete/.test(document.readyState)) document.addEventListener("DOMContentLoaded", onLoad); else onLoad();
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
 
-            function onLoad() {
-                if (tpj === undefined) { tpj = jQuery; if ("off" == "on") tpj.noConflict(); }
-                if (tpj("#rev_slider_101_1").revolution == undefined) {
-                    revslider_showDoubleJqueryError("#rev_slider_101_1");
-                } else {
-                    revapi101 = tpj("#rev_slider_101_1").show().revolution({
-                        sliderType: "standard",
-                        jsFileLocation: "//localhost/revslider-standalone/revslider/public/assets/js/",
-                        sliderLayout: "fullwidth",
-                        dottedOverlay: "none",
-                        delay: 9000,
-                        navigation: {
-                            keyboardNavigation: "off",
-                            keyboard_direction: "horizontal",
-                            mouseScrollNavigation: "off",
-                            mouseScrollReverse: "default",
-                            onHoverStop: "off",
-                            arrows: {
-                                style: "zeus",
-                                enable: true,
-                                hide_onmobile: false,
-                                hide_onleave: false,
-                                tmp: '<div class="tp-title-wrap">    <div class="tp-arr-imgholder"></div> </div>',
-                                left: {
-                                    h_align: "left",
-                                    v_align: "center",
-                                    h_offset: 20,
-                                    v_offset: 0
-                                },
-                                right: {
-                                    h_align: "right",
-                                    v_align: "center",
-                                    h_offset: 20,
-                                    v_offset: 0
-                                }
-                            }
-                        },
-                        visibilityLevels: [1240, 1024, 778, 480],
-                        gridwidth: 1170,
-                        gridheight: 790,
-                        lazyType: "none",
-                        shadow: 0,
-                        spinner: "spinner0",
-                        stopLoop: "off",
-                        stopAfterLoops: -1,
-                        stopAtSlide: -1,
-                        shuffle: "off",
-                        autoHeight: "off",
-                        disableProgressBar: "on",
-                        hideThumbsOnMobile: "off",
-                        hideSliderAtLimit: 0,
-                        hideCaptionAtLimit: 0,
-                        hideAllCaptionAtLilmit: 0,
-                        debugMode: false,
-                        fallbacks: {
-                            simplifyAll: "off",
-                            nextSlideOnWindowFocus: "off",
-                            disableFocusListener: false,
-                        }
-                    });
-                }; /* END OF revapi call */
-            }; /* END OF ON LOAD FUNCTION */
-        }()); /* END OF WRAPPING FUNCTION */
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('.mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
     </script>
 </body>
+
+</html>
 
 </html>
